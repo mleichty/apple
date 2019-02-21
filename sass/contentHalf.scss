@@ -1,0 +1,17 @@
+.contentHalf {
+  display: flex;
+  flex-wrap: wrap;
+
+  .contentHalf__block {
+    border: 10px solid $white;
+    background-color: $lightergray;
+    min-height: 400px;
+    width: 100%;
+  }
+
+  @media all and (min-width: 600px) {
+    .contentHalf__block {
+      width: 50%;
+    }
+  }
+}

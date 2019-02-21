@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  font-family: "Arial", "sans-serif"; }
+
+body {
+  font-size: 1.4rem; }
+
+h1, h2, h3, h4, h4, h5, h6, p {
+  margin-bottom: 1.4rem; }
+
+@media all and (min-width: 600px) {
+  body {
+    font-size: 1.8rem; }
+  h1, h2, h3, h4, h4, h5, h6, p {
+    margin-bottom: 1.8rem; } }
+
+.btn {
+  border: 1px solid #bbb;
+  padding: 8px 0;
+  background-color: #000;
+  color: #bbb;
+  width: 120px;
+  text-align: center;
+  border-radius: 5px; }
+
+.link {
+  text-decoration: none;
+  color: #6bf;
+  margin: 0 20px; }
+  .link:hover {
+    text-decoration: underline; }
+
+.navBar {
+  height: 40px;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(45, 45, 45, 0.98);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.3rem; }
+  .navBar .navBar__link {
+    text-decoration: none;
+    color: #fff; }
+    .navBar .navBar__link:hover {
+      color: rgba(255, 255, 255, 0.4); }
+
+@media all and (min-width: 960px) {
+  .navBar {
+    padding: 0 170px; } }
+
+.contentCenter--blackBG {
+  background-color: #000;
+  color: #fff;
+  border-bottom: 15px solid #222; }
+
+.contentCenter--lightBG {
+  background-color: #fafafa;
+  border-bottom: 15px solid #fff; }
+
+.contentCenter--blueBG {
+  background-color: #73c4cf !important; }
+
+.contentCenter {
+  display: flex;
+  flex-direction: column;
+  min-height: 320px; }
+  .contentCenter .contentCenter__wrapper--full {
+    width: 300px; }
+  .contentCenter .contentCenter__wrapper--half {
+    max-width: 320px; }
+  .contentCenter .contentCenter__wrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 200px;
+    text-align: center; }
+    .contentCenter .contentCenter__wrapper .contentCenter__textBig {
+      font-size: 2.5rem;
+      margin-bottom: 0; }
+    .contentCenter .contentCenter__wrapper .contentCenter__textBigger {
+      font-size: 3.5rem;
+      margin-bottom: 0;
+      font-weight: bold; }
+    .contentCenter .contentCenter__wrapper .contentCenter__links {
+      display: flex;
+      justify-content: center;
+      width: 100%; }
+  @media all and (min-width: 600px) {
+    .contentCenter .contentCenter__wrapper--full {
+      width: 550px; } }
+  .contentCenter .contentCenter__imgDiv--full {
+    width: 700px; }
+  .contentCenter .contentCenter__imgDiv--half {
+    max-width: 500px; }
+  .contentCenter .contentCenter__imgDiv {
+    margin: auto; }
+    .contentCenter .contentCenter__imgDiv .contentCenter__img {
+      width: 100%;
+      vertical-align: bottom; }
+
+.contentHalf {
+  display: flex;
+  flex-wrap: wrap; }
+  .contentHalf .contentHalf__block {
+    border: 10px solid #fff;
+    background-color: #fafafa;
+    min-height: 400px;
+    width: 100%; }
+  @media all and (min-width: 600px) {
+    .contentHalf .contentHalf__block {
+      width: 50%; } }
